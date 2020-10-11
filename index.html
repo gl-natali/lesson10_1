@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--display=swap -->
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 10 Homework 1</title>
+</head>
+
+<body>
+   <div class="wrapper">
+
+      <div class="title">
+         <h2>Восстановление пароля</h2>
+         <div class="subtitle">Введите Email, на него будет выслан новый пароль</div>
+      </div>
+
+      <form class="form" method="POST" enctype="multipart/form-data" action="#">
+         <input class="input input__item" tabindex="1"  autocomplete="off" name="email" value="" placeholder="Почта*"
+            type="email">
+         <div class="link">
+            <a href="#">Вернуться в форму авторизации</a>
+         </div>
+
+         <div class="button__item">
+            <button class="button__1" type="submit"><span>Отправить</span></button>
+         </div>
+         <div class="text">
+            * Если вы не получили письмо с паролем,
+            проверьте папку Спам.
+         </div>
+         <div class="link__item">
+            <a href="#">У вас нет аккаунта?</a>
+            <a class="registration" href="#"><span>Регистрация</span></a>
+         </div>
+
+         <div class="border"></div>
+
+         <div class="title__second-page">
+            <h2>Вход</h2>
+         </div>
+
+         <input class="input input__item-email" tabindex="2" autocomplete="off" name="email" value=""
+            placeholder="Почта*" type="email">
+
+         <input class="input input__item-password" tabindex="3" autocomplete="off" name="password" value=""
+            placeholder="Пароль*" type="password">
+
+         <div class="checkbox">
+            <input class="checkbox__item" id="check" name="form[]" value="1" type="checkbox">
+            <label for="check" class="checkbox__label">Запомнить меня</label>
+            <a href="#">Забыли пароль?</a>
+         </div>
+
+         <div class="button__second-page">
+            <button class="button__2" type="submit"><span>Войти</span></button>
+         </div>
+
+         <div class="text__second-page">
+            Войти через:
+         </div>
+         <div class="icon">
+            <a href="#" class="icon__vk">
+               <img src="img/icon/vk.svg" alt="vk">
+            </a>
+            <a href="#" class="icon__fb">
+               <img src="img/icon/facebook.svg" alt="fb">
+            </a>
+            <a href="#" class="icon__ok">
+               <img src="img/icon/odnoklassniki.svg" alt="ok">
+            </a>
+
+         </div>
+
+         <div class="link__item-second-page">
+            <a href="#">У вас нет аккаунта?</a>
+            <a class="registration" href="#"><span>Регистрация</span></a>
+         </div>
+
+
+         <div class="border"></div>
+
+         <div class="title__third-page">
+            <h2>Регистрация</h2>
+         </div>
+
+         <div class="input__form">
+            <input class="input input__name" tabindex="4" autocomplete="off" name="username" value="" placeholder="Имя*"
+               type="text">
+
+            <input class="input input__surname" tabindex="5" autocomplete="off" name="surname" value=""
+               placeholder="Фамилия*" type="text">
+
+            <input class="input input__login" tabindex="6" autocomplete="off" name="login" value="" placeholder="Логин*"
+               type="text">
+
+
+            <input class="input input__email" tabindex="7" autocomplete="off" name="email" value="" placeholder="EMail*"
+               type="email">
+
+            <input class="input input__item-password" tabindex="8" autocomplete="off" name="password" value=""
+               placeholder="Пароль*" type="password">
+
+            <input class="input input__item-password2" tabindex="9" autocomplete="off" name="password" value=""
+               placeholder="Повторите пароль*" type="password">
+         </div>
+
+         <div class="form__gender">
+            <div class="gender">
+               <div class="gender__item">
+                  <input checked id="radioMale" name="sex" value="male" class="gender__input" type="radio">
+                  <label class="gender__label" for="radioMale">Мужчина</label>
+               </div>
+               <div class="gender__item">
+                  <input id="radioFemale" name="sex" value="female" class="gender__input" type="radio">
+                  <label class="gender__label" for="radioFemale">Женщина</label>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="checkbox2">
+            <input class="checkbox__item2" id="check2" name="form[]" value="1" type="checkbox">
+            <label for="check2" class="checkbox__label2">Я согласен с </label>
+            <a href="#">Условия и правила</a>
+         </div>
+
+
+
+         <div class="button__second-page">
+            <button class="button__2" type="submit"><span>Регистрация</span></button>
+         </div>
+         <div class="link__item-second-page">
+            <a href="#">У вас есть аккаунта?</a>
+            <a class="registration" href="#"><span>Войти</span></a>
+         </div>
+
+      </form>
+   </div>
+</body>
+
+</html>
